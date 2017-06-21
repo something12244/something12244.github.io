@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="something.css">
+<script type="text/javascript">
+
+function login() {
+
+var username = document.getElementById('username');
+var pswd = document.getElementById('pwd');
+
+var user ="yourmom";
+var pass ="brockstar";
+
+if(username.value === user && pswd.value === pass) {
+console.log('You are logged in.');
+window.open('default.html','_self',false);
+}
+
+console.log(username.value);
+console.log(pswd.value);
+}
+
+
+
+</script>
+
+
+
+</head>
+
+
+<body>
+
+<form>
+
+username:<input type="text" id="username"></br>
+password:<input type="password" id="pwd">
+
+<button type="button" onclick="login()"> Log In </button>
+
+</form>
+
+</body>
+
+
+</html>
